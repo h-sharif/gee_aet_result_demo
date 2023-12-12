@@ -16,27 +16,41 @@ Due to the prolonged drought situation in Urmia Lake over the past several years
 
 A summary of the results for 2016 is presented below, and R scripts in the `scripts` folder have been used for this purpose. Figure 1 shows the study region on which the model has been tested. 
 
-![](figures/png/study_region.png){width=75%}
-Figure 1. Agricultural band combination (6, 5, 4) of Landsat 8 on July 09 2016 over Urmia Lake.
+<p align="center">
+  <img width="600" src=figures/png/study_region.png><br>
+  <b>Figure 1.</b> Agricultural band combination (6, 5, 4) of Landsat 8 on July 09 2016 over Urmia Lake.
+</p>
 
-![](figures/png/agg_region.png | width=100)
-Figure 2. Agricultural region located near Urmia Lake.
+<p align="center">
+  <img width="400" src=figures/png/agg_region.png><br>
+  <b>Figure 2.</b> Agricultural region located near Urmia Lake.
+</p>
 
 Following the execution of the GEE model for the chosen date of each month in 2016 (selected based on the smallest cloud cover), the results are depicted in Figure 3. WAPOR data was specifically chosen to provide the average Dekadal mean daily AET over the relevant period, which includes the selected date. WaPOR spatial maps can also be seen in Figure 4.
 
-![](figures/png/gee_daily_aet.png)
-Figure 3. GEE model results in selected dates in 2016 over the study region.
+<p align="center">
+  <img width="800" src=figures/png/gee_daily_aet.png><br>
+  <b>Figure 3.</b> GEE model results in selected dates in 2016 over the study region.
+</p>
 
-![](figures/png/wapor_mean_dekadal_aet.png)
-Figure 4. WaPOR results covering 10-day periods in selected dates in 2016 over the study region.
+<p align="center">
+  <img width="800" src=figures/png/wapor_mean_dekadal_aet.png><br>
+  <b>Figure 4.</b> WaPOR results covering 10-day periods in selected dates in 2016 over the study region.
+</p>
 
-As illustrated in Figure 5, the dominance of the vertical hydrological flux increases during growing seasons (May to September) due to the rise in net radiation flux. This leads to greater consistency between GEE results and WaPOR estimates. This observed pattern is further emphasized by a higher correlation, as depicted in Figure 6, and a notable similarity in cumulative AET over the agricultural region between GEE results and WaPOR estimates in these months. Therefore, it can be concluded that the bias in the developed models is minimal, indicating their robust performance during the agricultural season. This performance makes them a valuable tool for water resource management and stakeholders involved in the process.
+As illustrated in Figure 5, the dominance of the vertical hydrological flux increases during growing seasons (May to September) due to the rise in net radiation flux. This leads to greater consistency between GEE results and WaPOR estimates. This observed pattern is further emphasized by a higher correlation, as depicted in Figure 6, and a notable similarity in cumulative AET over the agricultural region between GEE results and WaPOR estimates in these months (see Figure 7). Therefore, it can be concluded that the bias in the developed models is minimal, indicating their robust performance during the agricultural season. This performance makes them a valuable tool for water resource management and stakeholders involved in the process.
 
-![](figures/png/wapor_vs_gee_resampled_agg_area.png)
-Figure 5. Comparison of GEE and WaPOR AET [mm/day] for selected dates. D1, D2, and D3 represent the first, and second 10 days and remaining days of the month.
+<p align="center">
+  <img width="800" src=figures/png/wapor_vs_gee_resampled_agg_area.png><br>
+  <b>Figure 5.</b> Comparison of GEE and WaPOR AET [mm/day] for selected dates. D1, D2, and D3 represent the first, and second 10 days and remaining days of the month.
+</p>
 
-![](figures/png/wapor_vs_gee_resampled_agg_cor.png){width = 50%}
-Figure 6. Pearson correlation between GEE and WaPOR AET spatial maps on selected dates of each month.
+<p align="center">
+  <img width="600" src=figures/png/wapor_vs_gee_resampled_agg_cor.png><br>
+  <b>Figure 6.</b> Pearson correlation between GEE and WaPOR AET spatial maps on selected dates of each month.
+</p>
 
-![](figures/png/wapor_vs_gee_resampled_agg_sum.png){width = 50%}
-Figure 6. The sum of AET over the agricultural region: calculated with each GEE and WaPOR for each selected date.
+<p align="center">
+  <img width="600" src=figures/png/wapor_vs_gee_resampled_agg_sum.png><br>
+  <b>Figure 7.</b> The sum of AET over the agricultural region: calculated with each GEE and WaPOR for each selected date.
+</p>
