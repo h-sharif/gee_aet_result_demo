@@ -19,7 +19,7 @@ A summary of the results for 2016 is presented below, and R scripts in the `scri
 ![](figures/png/study_region.png){width=75%}
 Figure 1. Agricultural band combination (6, 5, 4) of Landsat 8 on July 09 2016 over Urmia Lake.
 
-![](figures/png/agg_region.png){width=50%}
+![](figures/png/agg_region.png | width=100)
 Figure 2. Agricultural region located near Urmia Lake.
 
 Following the execution of the GEE model for the chosen date of each month in 2016 (selected based on the smallest cloud cover), the results are depicted in Figure 3. WAPOR data was specifically chosen to provide the average Dekadal mean daily AET over the relevant period, which includes the selected date. WaPOR spatial maps can also be seen in Figure 4.
