@@ -1,4 +1,4 @@
-# plotting hourly, daily, and monthly maps of AET derived with developed model
+# plotting daily maps of AET derived with developed model
 # in Google Earth Engine.
 library(tidyverse)
 library(data.table)
