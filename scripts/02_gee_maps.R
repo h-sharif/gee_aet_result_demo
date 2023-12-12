@@ -16,7 +16,6 @@ df_synpt <- fread("data/synoptic_data_etr.csv")
 # reading gee results
 ertf_paths <- list.files("data/gee", full.names = TRUE, pattern = "\\.tif$")
 etrf_series <- raster::stack(ertf_paths)
-et_hr <- calc(etrf_series, function(x) x * df_synpt$etr_mm_per_hr)
 et_day <- calc(etrf_series, function(x) x * df_synpt$etr_mm_per_day)
 
 # constructing data frame for plotting
@@ -25,7 +24,8 @@ colnames(etday_df) <- c("x", "y",
                         stamp_date("June 19, 2016")(mdy(df_synpt$date_image)))
 etday_df <- etday_df %>%
   pivot_longer(cols = c(3:14), 
-               names_to = "date", values_to = "et_mm_day")
+               names_to = "date", values_to = "et_mm_day") %>%
+  mutate(date = ordered(date, levels = colnames(etday_df)[3:14]))
 
 # plotting
 plt <- ggplot() +
@@ -39,7 +39,7 @@ plt <- ggplot() +
     limits = c(min(etday_df$y), max(etday_df$y)),
     expand = c(0, 0)
   ) +
-  labs(x = "", y = "", color = "") +
+  labs(x = "", y = "", fill = "AET [mm/day]") +
   theme_void() +
   facet_wrap(vars(date), nrow = 4, ncol = 3)
 
