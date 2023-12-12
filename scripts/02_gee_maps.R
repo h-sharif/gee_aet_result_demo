@@ -14,8 +14,8 @@ theme_set(theme_bw())
 df_synpt <- fread("data/synoptic_data_etr.csv")
 
 # reading gee results
-ertf_paths <- list.files("data/gee", full.names = TRUE, pattern = "\\.tif$")
-etrf_series <- raster::stack(ertf_paths)
+etrf_paths <- list.files("data/gee", full.names = TRUE, pattern = "\\.tif$")
+etrf_series <- raster::stack(etrf_paths)
 et_day <- calc(etrf_series, function(x) x * df_synpt$etr_mm_per_day)
 
 # constructing data frame for plotting
