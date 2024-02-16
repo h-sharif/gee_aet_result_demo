@@ -76,7 +76,7 @@ plt_cor <- data.frame(m = ordered(month.abb, levels = month.abb),
   ggplot(aes(x = m, y = cor)) +
     geom_col(color = "black", fill = "royalblue") +
   theme(panel.grid.major.x = element_blank()) +
-  labs(x = "Month of select day in 2016", y = "Pearson Correlation\nWaPOR Averaged Dekadal - GEE Daily") +
+  labs(x = "Month of selected day in 2016", y = "Pearson Correlation\nWaPOR Averaged Dekadal - GEE Daily") +
   scale_y_continuous(breaks = round(seq(-0.3, 1, by = 0.1), digits = 2))
 
 ggsave("figures/wapor_vs_gee_resampled_agg_cor.pdf", plt_cor, 
@@ -99,7 +99,7 @@ plt_sum <- sum_df %>%
   ggplot(aes(x = month, y = sum_area_et, fill = src)) +
     geom_bar(position = "dodge", stat = "identity", color = "black") +
     scale_fill_manual(values = c("WaPOR" = "red", "GEE" = "blue")) +
-    labs(x = "Month of select day in 2016",
+    labs(x = "Month of selected day in 2016",
          y = "Total AET over agricultural region [m/day]", 
          fill = "Model") +
   theme(panel.grid.major.x = element_blank())
