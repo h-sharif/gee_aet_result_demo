@@ -16,6 +16,7 @@ Due to the prolonged drought situation in Urmia Lake over the past several years
 
 A summary of the results for 2016 is presented below, and R scripts in the `scripts` folder have been used for this purpose. Figure 1 shows the study region on which the model has been tested. 
 
+
 <p align="center">
   <img width="600" src=figures/png/study_region.png><br>
   <b>Figure 1.</b> Agricultural band combination (6, 5, 4) of Landsat 8 on July 09 2016 over Urmia Lake.
